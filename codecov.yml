@@ -1,0 +1,7 @@
+fixes:
+  - "ballerinai/transaction/*/::transaction-ballerina/"
+
+ignore:
+  - "**/tests"
+  - "transaction-negetive-tests"
+
