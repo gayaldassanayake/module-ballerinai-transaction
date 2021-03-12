@@ -3,5 +3,5 @@ fixes:
 
 ignore:
   - "transaction-test-utils/"
-  - "/transaction-negetive-tests"
+  - "transaction-negetive-tests/"
 
