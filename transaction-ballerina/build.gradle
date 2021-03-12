@@ -152,8 +152,8 @@ task ballerinaTest {
     }
 
     def distributionBinPath =  project.projectDir.absolutePath + "/build/target/extracted-distributions/jballerina-tools-zip/jballerina-tools-${ballerinaLangVersion}/bin"
-    def testParams = "--code-coverage --includes=org.ballerinalang.stdlib.transaction.*:ballerina.*"
-
+    def testParams = "--code-coverage --includes=org.ballerinalang.stdlib.transaction.*:ballerinai.*"
+    
     doLast {
         exec {
             workingDir project.projectDir
