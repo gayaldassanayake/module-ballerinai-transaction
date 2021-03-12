@@ -148,7 +148,7 @@ task ballerinaNegativeTests {
                 commandLine 'sh', '-c', "$distributionBinPath/bal test"
             }
         }
-    }
+    }  
 }
 
 test {
