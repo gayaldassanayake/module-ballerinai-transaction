@@ -143,9 +143,9 @@ task ballerinaNegativeTests {
             workingDir project.projectDir
             environment "JAVA_OPTS", "-DBALLERINA_DEV_COMPILE_BALLERINA_ORG=true"
             if (Os.isFamily(Os.FAMILY_WINDOWS)) {
-                commandLine 'cmd', '/c', "$distributionBinPath/bal.bat test ${testParams}"
+                commandLine 'cmd', '/c', "$distributionBinPath/bal.bat test"
             } else {
-                commandLine 'sh', '-c', "$distributionBinPath/bal test ${testParams}"
+                commandLine 'sh', '-c', "$distributionBinPath/bal test"
             }
         }
     }
