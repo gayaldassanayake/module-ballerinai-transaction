@@ -136,7 +136,7 @@ task ballerinaNegativeTests {
     finalizedBy(revertTomlFile)
     doLast {
         def distributionBinPath =  project.projectDir.absolutePath + "/build/target/extracted-distributions/jballerina-tools-zip/jballerina-tools-${ballerinaLangVersion}/bin"
-        def testParams = "--code-coverage --includes=org.ballerinalang.stdlib.transaction.*:ballerinai.*"
+        def testParams = "--code-coverage --includes=ballerinai.*:org.ballerinalang.stdlib.transaction.*"
         
         setExecPath(configTOMLFile,distributionBinPath)
         exec {
